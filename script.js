@@ -30,7 +30,9 @@ const poems = {
                 'I find I am not here alone—',
                 'The mountain and the monk are one,',
                 'Beneath the ever-rising sun.'
-            ]
+            ],
+            likes: 12,
+            comments: []
         },
         {
             id: 'forest-teacher',
@@ -61,6 +63,10 @@ const poems = {
                 'Who shows me how to make it through',
                 'The storms of life with grace intact,',
                 'Rooted deep in sacred fact.'
+            ],
+            likes: 8,
+            comments: [
+                { author: 'Sarah M.', text: 'This poem speaks to my soul. The imagery of the oak as a teacher is beautiful.' }
             ]
         },
         {
@@ -92,7 +98,9 @@ const poems = {
                 'The song that\'s heard by all the birds:',
                 'To flow around what blocks the way,',
                 'And trust the current every day.'
-            ]
+            ],
+            likes: 15,
+            comments: []
         },
         {
             id: 'desert-silence',
@@ -123,7 +131,9 @@ const poems = {
                 'I learn to be completely alone,',
                 'Yet never lonely, never lost—',
                 'For solitude\'s the bridge I\'ve crossed.'
-            ]
+            ],
+            likes: 6,
+            comments: []
         },
         {
             id: 'ocean-meditation',
@@ -154,7 +164,9 @@ const poems = {
                 'I am the depths and so much more—',
                 'In ocean\'s mirror, clear and true,',
                 'I see there\'s nothing I can\'t do.'
-            ]
+            ],
+            likes: 9,
+            comments: []
         },
         {
             id: 'garden-sanctuary',
@@ -185,7 +197,9 @@ const poems = {
                 'Showing me what I must do:',
                 'Plant seeds of kindness, tend with love,',
                 'And trust the wisdom from above.'
-            ]
+            ],
+            likes: 11,
+            comments: []
         }
     ],
     contemplation: [
@@ -218,7 +232,9 @@ const poems = {
                 'Lives wisdom deeper than in death—',
                 'The eternal now, forever still,',
                 'Beyond the reach of mortal will.'
-            ]
+            ],
+            likes: 18,
+            comments: []
         },
         {
             id: 'empty-bowl',
@@ -249,7 +265,9 @@ const poems = {
                 'This bowl that teaches me to care',
                 'For nothing but the present breath,',
                 'That bridges life and bridge with death.'
-            ]
+            ],
+            likes: 7,
+            comments: []
         },
         {
             id: 'dawn-meditation',
@@ -280,7 +298,9 @@ const poems = {
                 'Each heartbeat joins the song of birds',
                 'Who wake to praise the breaking day,',
                 'As I wake to the deathless way.'
-            ]
+            ],
+            likes: 13,
+            comments: []
         },
         {
             id: 'mirror-mind',
@@ -311,7 +331,9 @@ const poems = {
                 'Just awareness, bright and full,',
                 'Reflecting all with perfect grace,',
                 'While resting in its natural place.'
-            ]
+            ],
+            likes: 10,
+            comments: []
         },
         {
             id: 'candle-flame',
@@ -342,7 +364,9 @@ const poems = {
                 'Lives all that I need to know:',
                 'To burn with purpose, clear and true,',
                 'And light the way for others too.'
-            ]
+            ],
+            likes: 14,
+            comments: []
         },
         {
             id: 'breath-prayer',
@@ -373,7 +397,9 @@ const poems = {
                 'Just this simple, sacred air',
                 'That flows through lungs and flows through heart,',
                 'Making me and all things part.'
-            ]
+            ],
+            likes: 16,
+            comments: []
         }
     ],
     journey: [
@@ -406,7 +432,9 @@ const poems = {
                 'The path was always leading through',
                 'The labyrinths of my own heart,',
                 'Where end and beginning never part.'
-            ]
+            ],
+            likes: 20,
+            comments: []
         },
         {
             id: 'inner-child',
@@ -437,7 +465,9 @@ const poems = {
                 'Sometimes it\'s just learning to wave',
                 'At clouds that sail across the sky,',
                 'And asking every raindrop "Why?"'
-            ]
+            ],
+            likes: 22,
+            comments: []
         },
         {
             id: 'shadow-work',
@@ -468,7 +498,9 @@ const poems = {
                 'Alone, but from the dark and bright',
                 'United in one sacred dance',
                 'Of full acceptance, not by chance.'
-            ]
+            ],
+            likes: 5,
+            comments: []
         },
         {
             id: 'crossroads',
@@ -509,7 +541,9 @@ const poems = {
                 'For wisdom to choose the way',
                 'That serves not just my own small need',
                 'But plants tomorrow\'s sacred seed.'
-            ]
+            ],
+            likes: 17,
+            comments: []
         },
         {
             id: 'transformation',
@@ -545,7 +579,9 @@ const poems = {
                 'Though it feels foreign, wild, and strange,',
                 'Trusting that what emerges here',
                 'Will be more beautiful and clear.'
-            ]
+            ],
+            likes: 19,
+            comments: []
         },
         {
             id: 'homecoming',
@@ -567,7 +603,7 @@ const poems = {
                 'In this body, this breath, this heart',
                 'That\'s been home right from the start.',
                 '',
-                'All the teachers, books, and prayers',
+                'All the teachers, books, and prayers,',
                 'All the climbing temple stairs',
                 'Led me back to this simple truth:',
                 'I am the seeker and the proof.',
@@ -581,7 +617,9 @@ const poems = {
                 'That has played the seeker\'s role',
                 'So perfectly, so long, so well,',
                 'To bring me to this truth to tell.'
-            ]
+            ],
+            likes: 25,
+            comments: []
         }
     ],
     wisdom: [
@@ -614,7 +652,9 @@ const poems = {
                 'Reflects the truth of being one',
                 'With all that was and all that\'s not—',
                 'Perfect in this moment\'s spot.'
-            ]
+            ],
+            likes: 21,
+            comments: []
         },
         {
             id: 'ancient-bell',
@@ -645,7 +685,9 @@ const poems = {
                 'Into the vast eternity',
                 'Where past and future cease to be,',
                 'And only truth rings clear and free.'
-            ]
+            ],
+            likes: 8,
+            comments: []
         },
         {
             id: 'masters-teaching',
@@ -681,7 +723,9 @@ const poems = {
                 'And ask what they should do to see',
                 'The truth that lies beyond all names,',
                 'I point beyond their mental games.'
-            ]
+            ],
+            likes: 12,
+            comments: []
         },
         {
             id: 'scripture-study',
@@ -717,7 +761,9 @@ const poems = {
                 'And seek the truth that never lies',
                 'Within the temple of this heart',
                 'Where wisdom\'s always been, from start.'
-            ]
+            ],
+            likes: 9,
+            comments: []
         },
         {
             id: 'zen-koan',
@@ -753,7 +799,9 @@ const poems = {
                 'Is everything that I can hear',
                 'When thinking stops and being starts—',
                 'The sound of unified hearts.'
-            ]
+            ],
+            likes: 15,
+            comments: []
         },
         {
             id: 'prayer-beads',
@@ -789,7 +837,9 @@ const poems = {
                 'These beads remind me of the will',
                 'To keep on praying, keep the faith',
                 'That leads beyond the mortal wraith.'
-            ]
+            ],
+            likes: 11,
+            comments: []
         }
     ],
     seasons: [
@@ -822,7 +872,9 @@ const poems = {
                 'Will bring again the birds that sing,',
                 'I let go all that I\'ve outgrown,',
                 'To make space for the yet unknown.'
-            ]
+            ],
+            likes: 18,
+            comments: []
         },
         {
             id: 'winter-wisdom',
@@ -853,7 +905,9 @@ const poems = {
                 'Of stillness, beyond thought and reason,',
                 'Where in the depths of winter\'s night,',
                 'Seeds dream of spring\'s returning light.'
-            ]
+            ],
+            likes: 14,
+            comments: []
         },
         {
             id: 'spring-awakening',
@@ -884,7 +938,9 @@ const poems = {
                 'And life may seem sometimes strange,',
                 'Spring always comes to those who wait',
                 'With open hearts at heaven\'s gate.'
-            ]
+            ],
+            likes: 23,
+            comments: []
         },
         {
             id: 'summer-abundance',
@@ -920,7 +976,9 @@ const poems = {
                 'When energy and purpose roll',
                 'Like thunder through my very core,',
                 'I give my all and then give more.'
-            ]
+            ],
+            likes: 16,
+            comments: []
         },
         {
             id: 'harvest-moon',
@@ -956,7 +1014,9 @@ const poems = {
                 'Is not what\'s taken but what\'s given,',
                 'Not what we hoard but what we share',
                 'With all who breathe this sacred air.'
-            ]
+            ],
+            likes: 20,
+            comments: []
         },
         {
             id: 'cycles-eternal',
@@ -992,7 +1052,9 @@ const poems = {
                 'Not fighting what I can\'t deliver',
                 'From change, but learning how to be',
                 'At peace with life\'s great mystery.'
-            ]
+            ],
+            likes: 13,
+            comments: []
         }
     ]
 };
@@ -1000,16 +1062,68 @@ const poems = {
 // Application state
 let currentSection = 'nature';
 let expandedPoems = new Set();
+let likedPoems = new Set();
+let currentCommentPoemId = null;
 
 // DOM elements
 const navButtons = document.querySelectorAll('.nav-button');
 const sections = document.querySelectorAll('.poem-section');
+const navigation = document.getElementById('navigation');
+const mainContent = document.getElementById('mainContent');
+const navToggle = document.getElementById('navToggle');
+const navCollapseBtn = document.getElementById('navCollapseBtn');
+const commentModal = document.getElementById('commentModal');
+const closeCommentModal = document.getElementById('closeCommentModal');
+const cancelComment = document.getElementById('cancelComment');
+const submitComment = document.getElementById('submitComment');
+const commenterName = document.getElementById('commenterName');
+const commentText = document.getElementById('commentText');
 
 // Initialize the application
 function init() {
     setupNavigation();
+    setupModals();
     renderPoems();
     showSection(currentSection);
+    loadUserData();
+}
+
+// Load user data from localStorage
+function loadUserData() {
+    const savedLikes = localStorage.getItem('likedPoems');
+    if (savedLikes) {
+        likedPoems = new Set(JSON.parse(savedLikes));
+    }
+    
+    const savedComments = localStorage.getItem('poemComments');
+    if (savedComments) {
+        const comments = JSON.parse(savedComments);
+        Object.keys(comments).forEach(sectionId => {
+            if (poems[sectionId]) {
+                poems[sectionId].forEach(poem => {
+                    if (comments[sectionId][poem.id]) {
+                        poem.comments = comments[sectionId][poem.id];
+                    }
+                });
+            }
+        });
+    }
+}
+
+// Save user data to localStorage
+function saveUserData() {
+    localStorage.setItem('likedPoems', JSON.stringify([...likedPoems]));
+    
+    const comments = {};
+    Object.keys(poems).forEach(sectionId => {
+        comments[sectionId] = {};
+        poems[sectionId].forEach(poem => {
+            if (poem.comments && poem.comments.length > 0) {
+                comments[sectionId][poem.id] = poem.comments;
+            }
+        });
+    });
+    localStorage.setItem('poemComments', JSON.stringify(comments));
 }
 
 // Setup navigation event listeners
@@ -1019,6 +1133,42 @@ function setupNavigation() {
             const section = button.dataset.section;
             switchSection(section);
         });
+    });
+    
+    // Mobile navigation toggle
+    navToggle.addEventListener('click', () => {
+        navigation.classList.toggle('open');
+        navToggle.classList.toggle('active');
+    });
+    
+    // Navigation collapse/expand
+    navCollapseBtn.addEventListener('click', () => {
+        navigation.classList.toggle('collapsed');
+        mainContent.classList.toggle('nav-collapsed');
+    });
+    
+    // Close mobile nav when clicking outside
+    document.addEventListener('click', (e) => {
+        if (window.innerWidth <= 1024 && 
+            !navigation.contains(e.target) && 
+            !navToggle.contains(e.target) && 
+            navigation.classList.contains('open')) {
+            navigation.classList.remove('open');
+            navToggle.classList.remove('active');
+        }
+    });
+}
+
+// Setup modal event listeners
+function setupModals() {
+    closeCommentModal.addEventListener('click', closeCommentModalHandler);
+    cancelComment.addEventListener('click', closeCommentModalHandler);
+    submitComment.addEventListener('click', submitCommentHandler);
+    
+    commentModal.addEventListener('click', (e) => {
+        if (e.target === commentModal) {
+            closeCommentModalHandler();
+        }
     });
 }
 
@@ -1041,6 +1191,12 @@ function switchSection(sectionId) {
     // Clear expanded poems when switching sections
     expandedPoems.clear();
     renderPoems();
+    
+    // Close mobile nav after selection
+    if (window.innerWidth <= 1024) {
+        navigation.classList.remove('open');
+        navToggle.classList.remove('active');
+    }
 }
 
 // Show specific section
@@ -1071,11 +1227,11 @@ function renderPoems() {
 // Create a poem tile element
 function createPoemTile(poem) {
     const isExpanded = expandedPoems.has(poem.id);
+    const isLiked = likedPoems.has(poem.id);
     const lines = isExpanded ? poem.fullPoem : poem.preview;
     
     const tile = document.createElement('div');
     tile.className = `poem-tile ${isExpanded ? 'expanded' : ''}`;
-    tile.addEventListener('click', () => togglePoem(poem.id));
     
     tile.innerHTML = `
         <div class="poem-header">
@@ -1088,10 +1244,60 @@ function createPoemTile(poem) {
                    style="${isExpanded ? `animation-delay: ${index * 50}ms` : ''}">${line}</p>`
             ).join('')}
         </div>
+        <div class="poem-actions">
+            <button class="action-btn like-btn ${isLiked ? 'liked' : ''}" data-poem-id="${poem.id}">
+                <span>${isLiked ? '❤️' : '🤍'}</span>
+                <span class="like-count">${poem.likes + (isLiked ? 1 : 0)}</span>
+            </button>
+            <button class="action-btn comment-btn" data-poem-id="${poem.id}">
+                <span>💬</span>
+                <span class="comment-count">${poem.comments.length}</span>
+            </button>
+            <button class="action-btn download-btn" data-poem-id="${poem.id}">
+                <span>📥</span>
+                <span>Download</span>
+            </button>
+        </div>
+        ${poem.comments.length > 0 ? `
+            <div class="comments-section">
+                <div class="comments-header">Comments (${poem.comments.length})</div>
+                ${poem.comments.map(comment => `
+                    <div class="comment">
+                        <div class="comment-author">${comment.author}</div>
+                        <div class="comment-text">${comment.text}</div>
+                    </div>
+                `).join('')}
+            </div>
+        ` : ''}
         <div class="poem-footer">
             ${isExpanded ? 'Click to collapse' : 'Click to read full poem'}
         </div>
     `;
+    
+    // Add event listeners
+    const poemContentArea = tile.querySelector('.poem-content, .poem-footer');
+    poemContentArea.addEventListener('click', () => togglePoem(poem.id));
+    
+    const expandIcon = tile.querySelector('.expand-icon');
+    expandIcon.addEventListener('click', () => togglePoem(poem.id));
+    
+    const likeBtn = tile.querySelector('.like-btn');
+    likeBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleLike(poem.id);
+    });
+    
+    const commentBtn = tile.querySelector('.comment-btn');
+    commentBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openCommentModal(poem.id);
+    });
+    
+    const downloadBtn = tile.querySelector('.download-btn');
+    downloadBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        downloadPoemAsImage(poem);
+    });
     
     return tile;
 }
@@ -1104,6 +1310,133 @@ function togglePoem(poemId) {
         expandedPoems.add(poemId);
     }
     renderPoems();
+}
+
+// Toggle like status
+function toggleLike(poemId) {
+    if (likedPoems.has(poemId)) {
+        likedPoems.delete(poemId);
+    } else {
+        likedPoems.add(poemId);
+    }
+    saveUserData();
+    renderPoems();
+}
+
+// Open comment modal
+function openCommentModal(poemId) {
+    currentCommentPoemId = poemId;
+    commenterName.value = '';
+    commentText.value = '';
+    commentModal.classList.add('active');
+}
+
+// Close comment modal
+function closeCommentModalHandler() {
+    commentModal.classList.remove('active');
+    currentCommentPoemId = null;
+}
+
+// Submit comment
+function submitCommentHandler() {
+    const name = commenterName.value.trim();
+    const text = commentText.value.trim();
+    
+    if (!name || !text) {
+        alert('Please enter both your name and comment.');
+        return;
+    }
+    
+    // Find the poem and add comment
+    Object.keys(poems).forEach(sectionId => {
+        const poem = poems[sectionId].find(p => p.id === currentCommentPoemId);
+        if (poem) {
+            poem.comments.push({ author: name, text: text });
+        }
+    });
+    
+    saveUserData();
+    renderPoems();
+    closeCommentModalHandler();
+}
+
+// Download poem as image
+function downloadPoemAsImage(poem) {
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    
+    // Set canvas size
+    canvas.width = 800;
+    canvas.height = 1000;
+    
+    // Create gradient background
+    const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+    gradient.addColorStop(0, '#0f172a');
+    gradient.addColorStop(0.5, '#1e293b');
+    gradient.addColorStop(1, '#0f172a');
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+    // Set text properties
+    ctx.fillStyle = '#ffffff';
+    ctx.textAlign = 'center';
+    
+    // Title
+    ctx.font = 'bold 32px serif';
+    ctx.fillText(poem.title, canvas.width / 2, 80);
+    
+    // Poem content
+    ctx.font = '20px serif';
+    ctx.fillStyle = '#cbd5e1';
+    
+    let y = 140;
+    const lineHeight = 30;
+    const maxWidth = canvas.width - 100;
+    
+    poem.fullPoem.forEach(line => {
+        if (line === '') {
+            y += lineHeight / 2;
+        } else {
+            // Word wrap for long lines
+            const words = line.split(' ');
+            let currentLine = '';
+            
+            words.forEach(word => {
+                const testLine = currentLine + word + ' ';
+                const metrics = ctx.measureText(testLine);
+                
+                if (metrics.width > maxWidth && currentLine !== '') {
+                    ctx.fillText(currentLine.trim(), canvas.width / 2, y);
+                    currentLine = word + ' ';
+                    y += lineHeight;
+                } else {
+                    currentLine = testLine;
+                }
+            });
+            
+            if (currentLine.trim() !== '') {
+                ctx.fillText(currentLine.trim(), canvas.width / 2, y);
+                y += lineHeight;
+            }
+        }
+    });
+    
+    // Attribution
+    ctx.font = 'italic 18px serif';
+    ctx.fillStyle = '#f59e0b';
+    ctx.fillText('- by Eternal Monkey', canvas.width / 2, canvas.height - 50);
+    
+    // Download the image
+    canvas.toBlob(blob => {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${poem.title.replace(/[^a-z0-9]/gi, '_').toLowerCase()}_eternal_monkey.png`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    });
 }
 
 // Initialize the application when DOM is loaded
