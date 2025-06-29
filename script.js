@@ -453,6 +453,12 @@ function renderAllPoems() {
     });
 }
 
+// Get last four lines of poem for preview
+function getLastFourLines(content) {
+    const nonEmptyLines = content.filter(line => line.trim() !== '');
+    return nonEmptyLines.slice(-4);
+}
+
 // Create a poem tile element
 function createPoemElement(poem, section, index) {
     const poemId = `${section}-${index}`;
@@ -469,13 +475,17 @@ function createPoemElement(poem, section, index) {
         return `<div class="poem-line">${line}</div>`;
     }).join('');
     
+    // Get preview lines (last 4 lines)
+    const previewLines = getLastFourLines(poem.content);
+    const previewContent = previewLines.map(line => `<div class="poem-line">${line}</div>`).join('');
+    
     poemDiv.innerHTML = `
         <div class="poem-header">
             <h3 class="poem-title">${poem.title}</h3>
             <span class="expand-icon">${isExpanded ? '−' : '+'}</span>
         </div>
         <div class="poem-content">
-            ${isExpanded ? contentLines : `<div class="poem-line">${poem.content[0]}</div>`}
+            ${isExpanded ? contentLines : previewContent}
         </div>
         ${isExpanded ? `
             <div class="poem-website-link">
@@ -698,7 +708,7 @@ function scheduleAutoCollapse() {
         if (!isNavigationLocked) {
             collapseNavigation();
         }
-    }, 1000);
+    }, 800);
 }
 
 // Toggle navigation lock
@@ -711,6 +721,7 @@ function toggleNavigationLock() {
             clearTimeout(autoCollapseTimeout);
             autoCollapseTimeout = null;
         }
+        expandNavigation();
     } else {
         // Resume auto-behavior based on current mouse position
         const rect = navigation.getBoundingClientRect();
