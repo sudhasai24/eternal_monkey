@@ -257,6 +257,22 @@ body {
     font-weight: 300;
 }
 
+.books-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+.books-label {
+    font-size: 0.875rem;
+    color: #94a3b8;
+    font-weight: 500;
+    text-align: right;
+    margin-bottom: 0.25rem;
+}
+
 .books-thumbnails {
     display: flex;
     gap: 0.75rem;
@@ -445,6 +461,32 @@ body {
     font-size: 0.875rem;
     font-style: italic;
     font-weight: 500;
+}
+
+/* Amazon Link for Poems */
+.poem-amazon-link {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.amazon-poem-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #f59e0b;
+    text-decoration: none;
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    background: rgba(245, 158, 11, 0.1);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.amazon-poem-link:hover {
+    background: rgba(245, 158, 11, 0.2);
+    color: #ea580c;
 }
 
 /* Share Options */
@@ -645,6 +687,14 @@ body {
         align-items: center;
         text-align: center;
         gap: 1.5rem;
+    }
+    
+    .books-section {
+        align-items: center;
+    }
+    
+    .books-label {
+        text-align: center;
     }
     
     .author-name {

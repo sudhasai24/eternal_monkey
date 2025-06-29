@@ -14,7 +14,8 @@ const poetryData = {
                 "And all the world's chaotic cease",
                 "In stories that the forest holds."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM1ID"
         },
         {
             title: "River's Song",
@@ -29,7 +30,8 @@ const poetryData = {
                 "In water's endless reverie,",
                 "We learn what we need to know."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM2ID"
         },
         {
             title: "Solitary Oak",
@@ -44,7 +46,8 @@ const poetryData = {
                 "Teaching us to stand unbowed",
                 "While reaching for the endless sky."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM3ID"
         }
     ],
     contemplation: [
@@ -61,7 +64,8 @@ const poetryData = {
                 "In stillness, truth is clearly shown,",
                 "When noise of world disappears."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM4ID"
         },
         {
             title: "The Observer",
@@ -76,7 +80,8 @@ const poetryData = {
                 "In this eternal dance between",
                 "The false self and the ever-true."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM5ID"
         },
         {
             title: "Meditation",
@@ -91,7 +96,8 @@ const poetryData = {
                 "Where peace and understanding grow",
                 "In silence, clearly seen and heard."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM6ID"
         }
     ],
     journey: [
@@ -108,7 +114,8 @@ const poetryData = {
                 "In walking comes the revelation",
                 "That we are already free."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM7ID"
         },
         {
             title: "Crossroads",
@@ -123,7 +130,8 @@ const poetryData = {
                 "Where separate selves begin to merge",
                 "With what we've always been before."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM8ID"
         },
         {
             title: "Homecoming",
@@ -138,7 +146,8 @@ const poetryData = {
                 "In every moment, peace I find",
                 "In consciousness, my truest song."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM9ID"
         }
     ],
     wisdom: [
@@ -155,7 +164,8 @@ const poetryData = {
                 "The Way that can be walked by you",
                 "Is not the Way that must be led."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM10ID"
         },
         {
             title: "The Teacher",
@@ -170,7 +180,8 @@ const poetryData = {
                 "Walk the earth both high and lowly,",
                 "Where the lost are always found."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM11ID"
         },
         {
             title: "Paradox",
@@ -185,7 +196,8 @@ const poetryData = {
                 "In darkness, see with perfect clearness",
                 "The light that's always been around."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM12ID"
         }
     ],
     seasons: [
@@ -202,7 +214,8 @@ const poetryData = {
                 "The cycle turns, the spirit flies",
                 "To realms where death has never been."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM13ID"
         },
         {
             title: "Summer's Fullness",
@@ -217,7 +230,8 @@ const poetryData = {
                 "Where every ending is a start,",
                 "And every stranger is a friend."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM14ID"
         },
         {
             title: "Autumn's Wisdom",
@@ -232,7 +246,8 @@ const poetryData = {
                 "The tree will go to any length",
                 "To show us our true destiny."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM15ID"
         },
         {
             title: "Winter's Rest",
@@ -247,7 +262,8 @@ const poetryData = {
                 "From seeming death, life always must",
                 "Emerge renewed in time and place."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM16ID"
         }
     ],
     love: [
@@ -264,7 +280,8 @@ const poetryData = {
                 "In the silence, love displays",
                 "The music that eternity sings."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM17ID"
         },
         {
             title: "Eternal Bond",
@@ -279,7 +296,8 @@ const poetryData = {
                 "Love gives every soul a chance",
                 "To find where they have always belonged."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM18ID"
         }
     ],
     dreams: [
@@ -296,7 +314,8 @@ const poetryData = {
                 "When morning comes and night is done,",
                 "We wake to play our waking role."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM19ID"
         },
         {
             title: "Lucid Moments",
@@ -311,7 +330,8 @@ const poetryData = {
                 "And discovers that the soul",
                 "Has stories yet to be told."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM20ID"
         }
     ],
     healing: [
@@ -328,7 +348,8 @@ const poetryData = {
                 "In the space between collapse",
                 "And rising, wisdom starts to flow."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM21ID"
         },
         {
             title: "Phoenix Rising",
@@ -343,7 +364,8 @@ const poetryData = {
                 "In losing, we are truly winning",
                 "The strength to rise through joy and pain."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM22ID"
         }
     ],
     memories: [
@@ -360,7 +382,8 @@ const poetryData = {
                 "Memory keeps its sacred pledges",
                 "To hold our loved ones in the light."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM23ID"
         },
         {
             title: "Time's River",
@@ -375,7 +398,8 @@ const poetryData = {
                 "Each memory helps us to know",
                 "We've traveled both near and far."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM24ID"
         }
     ],
     hope: [
@@ -392,7 +416,8 @@ const poetryData = {
                 "In hope, we find our truest song,",
                 "On hope, our spirits can depend."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM25ID"
         },
         {
             title: "Faith's Whisper",
@@ -407,7 +432,8 @@ const poetryData = {
                 "Faith sustains us hour by hour",
                 "Through our darkest, longest days."
             ],
-            websiteLink: "https://sajinpsudhakaran.com"
+            websiteLink: "https://sajinsudhakaran.com",
+            amazonLink: "https://amazon.com/dp/POEM26ID"
         }
     ]
 };
@@ -489,7 +515,12 @@ function createPoemElement(poem, section, index) {
         </div>
         ${isExpanded ? `
             <div class="poem-author">
-                <span class="author-credit">- by Sajin P Sudhakaran</span>
+                <span class="author-credit">- by Sajin Sudhakaran</span>
+            </div>
+            <div class="poem-amazon-link">
+                <a href="${poem.amazonLink}" class="amazon-poem-link" target="_blank">
+                    🖼️ Get this poem as framed art on Amazon
+                </a>
             </div>
             <div class="poem-share">
                 <div class="share-title">Share this poem</div>
@@ -508,11 +539,6 @@ function createPoemElement(poem, section, index) {
                     </button>
                 </div>
             </div>
-            <div class="poem-website-link">
-                <a href="${poem.websiteLink}" class="website-poem-link" target="_blank">
-                    🌐 Visit Sajin P Sudhakaran's Website
-                </a>
-            </div>
         ` : ''}
         <div class="poem-footer">
             ${isExpanded ? '' : 'Click to expand...'}
@@ -520,7 +546,7 @@ function createPoemElement(poem, section, index) {
     `;
     
     poemDiv.addEventListener('click', (e) => {
-        if (!e.target.closest('.share-btn') && !e.target.closest('.website-poem-link')) {
+        if (!e.target.closest('.share-btn') && !e.target.closest('.amazon-poem-link')) {
             togglePoemExpansion(poemId);
         }
     });
@@ -531,7 +557,7 @@ function createPoemElement(poem, section, index) {
 // Share poem function
 function sharePoem(title, poemId, platform) {
     const url = `${window.location.origin}${window.location.pathname}#${poemId}`;
-    const text = `Check out this beautiful poem "${title}" by Sajin P Sudhakaran`;
+    const text = `Check out this beautiful poem "${title}" by Sajin Sudhakaran`;
     
     switch (platform) {
         case 'twitter':
