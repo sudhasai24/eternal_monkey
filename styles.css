@@ -86,8 +86,7 @@ body {
 .navigation.collapsed .nav-text,
 .navigation.collapsed .subtitle,
 .navigation.collapsed .nav-title,
-.navigation.collapsed .nav-footer,
-.navigation.collapsed .books-section {
+.navigation.collapsed .nav-footer {
     opacity: 0;
     pointer-events: none;
 }
@@ -159,118 +158,6 @@ body {
     font-size: 0.875rem;
     font-style: italic;
     transition: opacity 0.3s ease;
-}
-
-/* Books Section */
-.books-section {
-    padding-bottom: 2rem;
-    border-bottom: 1px solid rgba(148, 163, 184, 0.2);
-    transition: opacity 0.3s ease;
-}
-
-.books-title {
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: #94a3b8;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 1rem;
-}
-
-.books-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.book-item {
-    display: flex;
-    gap: 0.75rem;
-    align-items: flex-start;
-}
-
-.book-thumbnail {
-    flex-shrink: 0;
-}
-
-.book-cover {
-    width: 60px;
-    height: 80px;
-    border-radius: 0.375rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0.5rem;
-    position: relative;
-    overflow: hidden;
-}
-
-.book-1 {
-    background: linear-gradient(135deg, #1e40af, #3730a3, #581c87);
-}
-
-.book-2 {
-    background: linear-gradient(135deg, #059669, #047857, #065f46);
-}
-
-.book-title-text {
-    font-size: 0.5rem;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    line-height: 1.2;
-}
-
-.book-author-text {
-    font-size: 0.375rem;
-    color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    margin-top: auto;
-}
-
-.book-info {
-    flex: 1;
-}
-
-.book-name {
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: white;
-    margin-bottom: 0.5rem;
-}
-
-.amazon-link {
-    display: flex;
-    align-items: center;
-    gap: 0.375rem;
-    color: #f59e0b;
-    text-decoration: none;
-    font-size: 0.75rem;
-    transition: color 0.2s ease;
-}
-
-.amazon-link:hover {
-    color: #ea580c;
-}
-
-.amazon-logo {
-    width: 20px;
-    height: 10px;
-    object-fit: contain;
-}
-
-.books-note {
-    margin-top: 1rem;
-    padding: 0.75rem;
-    background: rgba(51, 65, 85, 0.3);
-    border-radius: 0.5rem;
-    border-left: 3px solid #f59e0b;
-}
-
-.books-note p {
-    font-size: 0.75rem;
-    color: #cbd5e1;
-    line-height: 1.4;
 }
 
 .nav-sections {
@@ -354,6 +241,149 @@ body {
 .main-content.nav-collapsed {
     margin-left: 80px;
     max-width: calc(100vw - 80px);
+}
+
+/* Author Header */
+.author-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.author-name {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #f59e0b, #ea580c, #dc2626);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+}
+
+.author-tagline {
+    color: #94a3b8;
+    font-size: 1.125rem;
+    font-style: italic;
+}
+
+/* Books Showcase */
+.books-showcase {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.books-showcase-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.books-row {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.book-showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.book-cover-large {
+    width: 180px;
+    height: 240px;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-cover-large:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(245, 158, 11, 0.2);
+}
+
+.book-1 {
+    background: linear-gradient(135deg, #1e40af, #3730a3, #581c87);
+}
+
+.book-2 {
+    background: linear-gradient(135deg, #059669, #047857, #065f46);
+}
+
+.book-title-large {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.book-author-large {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin-top: auto;
+}
+
+.book-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.book-title-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+.amazon-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    background: linear-gradient(45deg, #f59e0b, #ea580c);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+}
+
+.amazon-button:hover {
+    background: linear-gradient(45deg, #ea580c, #dc2626);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
+}
+
+.books-note-main {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background: rgba(51, 65, 85, 0.3);
+    border-radius: 0.75rem;
+    border-left: 4px solid #f59e0b;
+    display: inline-block;
+}
+
+.books-note-main p {
+    font-size: 0.875rem;
+    color: #cbd5e1;
+    line-height: 1.4;
 }
 
 .poem-section {
@@ -614,6 +644,16 @@ body {
     .poems-grid {
         grid-template-columns: 1fr;
     }
+    
+    .author-name {
+        font-size: 2.5rem;
+    }
+    
+    .books-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -623,6 +663,24 @@ body {
     
     .main-content {
         padding: 1rem;
+    }
+    
+    .author-name {
+        font-size: 2rem;
+    }
+    
+    .books-showcase-title {
+        font-size: 1.5rem;
+    }
+    
+    .book-cover-large {
+        width: 150px;
+        height: 200px;
+        padding: 1rem;
+    }
+    
+    .book-title-large {
+        font-size: 0.875rem;
     }
     
     .section-header {
@@ -637,13 +695,5 @@ body {
     
     .poems-grid {
         grid-template-columns: 1fr;
-    }
-    
-    .books-grid {
-        gap: 0.75rem;
-    }
-    
-    .book-item {
-        gap: 0.5rem;
     }
 }
