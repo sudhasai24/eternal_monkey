@@ -249,6 +249,166 @@ const poetryData = {
             ],
             amazonLink: "https://amazon.com/dp/POEM16ID"
         }
+    ],
+    love: [
+        {
+            title: "First Love",
+            content: [
+                "In the garden of first love,",
+                "Every flower blooms with light,",
+                "Stars descend from realms above",
+                "To witness hearts take their first flight.",
+                "",
+                "Time stands still in lover's gaze,",
+                "Words become unnecessary things,",
+                "In the silence, love displays",
+                "The music that eternity sings."
+            ],
+            amazonLink: "https://amazon.com/dp/POEM17ID"
+        },
+        {
+            title: "Eternal Bond",
+            content: [
+                "Beyond the veil of flesh and bone,",
+                "Two souls recognize their kin,",
+                "In love, we're never truly alone,",
+                "The journey out leads back within.",
+                "",
+                "Through lifetimes we have danced this dance,",
+                "In different forms, the same sweet song,",
+                "Love gives every soul a chance",
+                "To find where they have always belonged."
+            ],
+            amazonLink: "https://amazon.com/dp/POEM18ID"
+        }
+    ],
+    dreams: [
+        {
+            title: "Night Visions",
+            content: [
+                "In dreams, the boundaries dissolve,",
+                "Between the real and the imagined,",
+                "Here mysteries begin to revolve",
+                "Around truths that can't be fathioned.",
+                "",
+                "The dreamer and the dream are one,",
+                "In landscapes painted by the soul,",
+                "When morning comes and night is done,",
+                "We wake to play our waking role."
+            ],
+            amazonLink: "https://amazon.com/dp/POEM19ID"
+        },
+        {
+            title: "Lucid Moments",
+            content: [
+                "In the space between sleep and wake,",
+                "Consciousness expands its wings,",
+                "Reality begins to shake",
+                "As awareness gently sings.",
+                "",
+                "Here the dreamer takes control,",
+                "Of the visions that unfold,",
+                "And discovers that the soul",
+                "Has stories yet to be told."
+            ],
+            amazonLink: "https://amazon.com/dp/POEM20ID"
+        }
+    ],
+    healing: [
+        {
+            title: "Broken to Whole",
+            content: [
+                "In the breaking, light gets in,",
+                "Through the cracks of wounded hearts,",
+                "Healing is where we begin",
+                "To understand our truest parts.",
+                "",
+                "Scars become our sacred maps,",
+                "Showing where we've learned to grow,",
+                "In the space between collapse",
+                "And rising, wisdom starts to flow."
+            ],
+            amazonLink: "https://amazon.com/dp/POEM21ID"
+        },
+        {
+            title: "Phoenix Rising",
+            content: [
+                "From ashes of what used to be,",
+                "A stronger self begins to rise,",
+                "The fire that once consumed me",
+                "Now lights the wisdom in my eyes.",
+                "",
+                "Each ending births a new beginning,",
+                "Each loss reveals a hidden gain,",
+                "In losing, we are truly winning",
+                "The strength to rise through joy and pain."
+            ],
+            amazonLink: "https://amazon.com/dp/POEM22ID"
+        }
+    ],
+    memories: [
+        {
+            title: "Faded Photographs",
+            content: [
+                "In yellowed photographs I find",
+                "The faces of forgotten days,",
+                "Each image holds within its mind",
+                "The echo of love's gentle ways.",
+                "",
+                "Time may blur the sharpest edges,",
+                "But cannot dim the heart's true sight,",
+                "Memory keeps its sacred pledges",
+                "To hold our loved ones in the light."
+            ],
+            amazonLink: "https://amazon.com/dp/POEM23ID"
+        },
+        {
+            title: "Time's River",
+            content: [
+                "Memories flow like rivers deep,",
+                "Carrying treasures from the past,",
+                "Some we hold and some we keep,",
+                "Others flow away too fast.",
+                "",
+                "But in the current's gentle flow,",
+                "We find the gold of who we are,",
+                "Each memory helps us to know",
+                "We've traveled both near and far."
+            ],
+            amazonLink: "https://amazon.com/dp/POEM24ID"
+        }
+    ],
+    hope: [
+        {
+            title: "Dawn's Promise",
+            content: [
+                "Even in the darkest night,",
+                "Dawn waits patiently to break,",
+                "Hope is the eternal light",
+                "That keeps our weary souls awake.",
+                "",
+                "No winter lasts forever long,",
+                "No storm can rage without an end,",
+                "In hope, we find our truest song,",
+                "On hope, our spirits can depend."
+            ],
+            amazonLink: "https://amazon.com/dp/POEM25ID"
+        },
+        {
+            title: "Faith's Whisper",
+            content: [
+                "When the world seems lost in shadow,",
+                "And the path ahead unclear,",
+                "Faith whispers soft and mellow,",
+                "'Trust, for I am always here.'",
+                "",
+                "Not in grand displays of power,",
+                "But in quiet, gentle ways,",
+                "Faith sustains us hour by hour",
+                "Through our darkest, longest days."
+            ],
+            amazonLink: "https://amazon.com/dp/POEM26ID"
+        }
     ]
 };
 
@@ -323,15 +483,75 @@ function createPoemElement(poem, section, index) {
                     🛒 Get this poem as framed art on Amazon
                 </a>
             </div>
+            <div class="poem-share">
+                <div class="share-title">Share this poem</div>
+                <div class="share-buttons">
+                    <button class="share-btn" onclick="sharePoem('${poem.title}', '${poemId}', 'twitter')">
+                        🐦 Twitter
+                    </button>
+                    <button class="share-btn" onclick="sharePoem('${poem.title}', '${poemId}', 'facebook')">
+                        📘 Facebook
+                    </button>
+                    <button class="share-btn" onclick="sharePoem('${poem.title}', '${poemId}', 'whatsapp')">
+                        💬 WhatsApp
+                    </button>
+                    <button class="share-btn" onclick="copyPoemLink('${poemId}')">
+                        🔗 Copy Link
+                    </button>
+                </div>
+            </div>
         ` : ''}
         <div class="poem-footer">
-            ${isExpanded ? '- by Sajin P. Sudhakaran' : 'Click to expand...'}
+            ${isExpanded ? '- by Sajin P Sudhakaran' : 'Click to expand...'}
         </div>
     `;
     
-    poemDiv.addEventListener('click', () => togglePoemExpansion(poemId));
+    poemDiv.addEventListener('click', (e) => {
+        if (!e.target.closest('.share-btn') && !e.target.closest('.amazon-poem-link')) {
+            togglePoemExpansion(poemId);
+        }
+    });
     
     return poemDiv;
+}
+
+// Share poem function
+function sharePoem(title, poemId, platform) {
+    const url = `${window.location.origin}${window.location.pathname}#${poemId}`;
+    const text = `Check out this beautiful poem "${title}" by Sajin P Sudhakaran`;
+    
+    switch (platform) {
+        case 'twitter':
+            window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`, '_blank');
+            break;
+        case 'facebook':
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank');
+            break;
+        case 'whatsapp':
+            window.open(`https://wa.me/?text=${encodeURIComponent(text + ' ' + url)}`, '_blank');
+            break;
+    }
+}
+
+// Copy poem link function
+function copyPoemLink(poemId) {
+    const url = `${window.location.origin}${window.location.pathname}#${poemId}`;
+    navigator.clipboard.writeText(url).then(() => {
+        // Show a temporary success message
+        const btn = event.target;
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '✓ Copied!';
+        btn.style.background = 'rgba(34, 197, 94, 0.2)';
+        btn.style.borderColor = 'rgba(34, 197, 94, 0.3)';
+        btn.style.color = '#22c55e';
+        
+        setTimeout(() => {
+            btn.innerHTML = originalText;
+            btn.style.background = '';
+            btn.style.borderColor = '';
+            btn.style.color = '';
+        }, 2000);
+    });
 }
 
 // Toggle poem expansion

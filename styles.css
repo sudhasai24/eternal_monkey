@@ -70,7 +70,7 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    width: 320px;
+    width: 280px;
     height: 100vh;
     background: linear-gradient(180deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
     border-right: 1px solid rgba(148, 163, 184, 0.2);
@@ -80,19 +80,14 @@ body {
 }
 
 .navigation.collapsed {
-    width: 80px;
+    width: 70px;
 }
 
 .navigation.collapsed .nav-text,
-.navigation.collapsed .subtitle,
 .navigation.collapsed .nav-title,
 .navigation.collapsed .nav-footer {
     opacity: 0;
     pointer-events: none;
-}
-
-.navigation.collapsed .title {
-    font-size: 1rem;
 }
 
 .navigation.collapsed .nav-button {
@@ -134,30 +129,6 @@ body {
     flex-direction: column;
     gap: 2rem;
     position: relative;
-}
-
-.header {
-    text-align: center;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid rgba(148, 163, 184, 0.2);
-}
-
-.title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    background: linear-gradient(45deg, #f59e0b, #ea580c, #dc2626);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 0.5rem;
-    transition: font-size 0.3s ease;
-}
-
-.subtitle {
-    color: #94a3b8;
-    font-size: 0.875rem;
-    font-style: italic;
-    transition: opacity 0.3s ease;
 }
 
 .nav-sections {
@@ -231,86 +202,66 @@ body {
 
 /* Main Content Styles */
 .main-content {
-    margin-left: 320px;
+    margin-left: 280px;
     padding: 2rem;
     flex: 1;
-    max-width: calc(100vw - 320px);
+    max-width: calc(100vw - 280px);
     transition: margin-left 0.3s ease, max-width 0.3s ease;
 }
 
 .main-content.nav-collapsed {
-    margin-left: 80px;
-    max-width: calc(100vw - 80px);
+    margin-left: 70px;
+    max-width: calc(100vw - 70px);
 }
 
-/* Author Header */
-.author-header {
+/* Top Header with Author and Book Thumbnails */
+.top-header {
     text-align: center;
     margin-bottom: 3rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
     border-bottom: 1px solid rgba(148, 163, 184, 0.2);
 }
 
 .author-name {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     background: linear-gradient(45deg, #f59e0b, #ea580c, #dc2626);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
-.author-tagline {
-    color: #94a3b8;
-    font-size: 1.125rem;
-    font-style: italic;
-}
-
-/* Books Showcase */
-.books-showcase {
-    margin-bottom: 4rem;
-    text-align: center;
-}
-
-.books-showcase-title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 2rem;
-}
-
-.books-row {
+.books-thumbnails {
     display: flex;
     justify-content: center;
-    gap: 3rem;
-    margin-bottom: 2rem;
+    gap: 2rem;
+    margin-top: 1rem;
 }
 
-.book-showcase {
+.book-thumb {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 0.5rem;
 }
 
-.book-cover-large {
-    width: 180px;
-    height: 240px;
-    border-radius: 0.75rem;
+.book-cover-thumb {
+    width: 80px;
+    height: 100px;
+    border-radius: 0.5rem;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
-.book-cover-large:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(245, 158, 11, 0.2);
+.book-cover-thumb:hover {
+    transform: translateY(-3px);
 }
 
 .book-1 {
@@ -321,69 +272,24 @@ body {
     background: linear-gradient(135deg, #059669, #047857, #065f46);
 }
 
-.book-title-large {
-    font-size: 1rem;
+.book-title-thumb {
+    font-size: 0.6rem;
     font-weight: bold;
     color: white;
     text-align: center;
-    line-height: 1.3;
+    line-height: 1.2;
 }
 
-.book-author-large {
-    font-size: 0.75rem;
-    color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    margin-top: auto;
-}
-
-.book-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.book-title-text {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-}
-
-.amazon-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: white;
-    background: linear-gradient(45deg, #f59e0b, #ea580c);
+.amazon-thumb-link {
+    color: #f59e0b;
     text-decoration: none;
-    font-size: 0.875rem;
-    font-weight: 600;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.5rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+    font-size: 0.75rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
 }
 
-.amazon-button:hover {
-    background: linear-gradient(45deg, #ea580c, #dc2626);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
-}
-
-.books-note-main {
-    margin-top: 2rem;
-    padding: 1rem 2rem;
-    background: rgba(51, 65, 85, 0.3);
-    border-radius: 0.75rem;
-    border-left: 4px solid #f59e0b;
-    display: inline-block;
-}
-
-.books-note-main p {
-    font-size: 0.875rem;
-    color: #cbd5e1;
-    line-height: 1.4;
+.amazon-thumb-link:hover {
+    color: #ea580c;
 }
 
 .poem-section {
@@ -520,6 +426,48 @@ body {
     color: #ea580c;
 }
 
+/* Share Options */
+.poem-share {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.share-title {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.share-buttons {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.375rem 0.75rem;
+    background: rgba(51, 65, 85, 0.5);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: 0.375rem;
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.75rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.share-btn:hover {
+    background: rgba(245, 158, 11, 0.1);
+    border-color: rgba(245, 158, 11, 0.3);
+    color: #f59e0b;
+}
+
 .poem-footer {
     margin-top: 1rem;
     padding-top: 1rem;
@@ -620,7 +568,7 @@ body {
     .navigation {
         transform: translateX(-100%);
         transition: transform 0.3s ease;
-        width: 320px;
+        width: 280px;
     }
     
     .navigation.open {
@@ -628,7 +576,7 @@ body {
     }
     
     .navigation.collapsed {
-        width: 320px;
+        width: 280px;
     }
     
     .main-content {
@@ -646,13 +594,11 @@ body {
     }
     
     .author-name {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
-    .books-row {
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
+    .books-thumbnails {
+        gap: 1.5rem;
     }
 }
 
@@ -666,21 +612,13 @@ body {
     }
     
     .author-name {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
     
-    .books-showcase-title {
-        font-size: 1.5rem;
-    }
-    
-    .book-cover-large {
-        width: 150px;
-        height: 200px;
-        padding: 1rem;
-    }
-    
-    .book-title-large {
-        font-size: 0.875rem;
+    .books-thumbnails {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
     }
     
     .section-header {
