@@ -15,7 +15,7 @@ const poetryData = {
                 "In stories that the forest holds."
             ],
             websiteLink: "https://sajinsudhakaran.com",
-            amazonLink: "https://amazon.com/dp/POEM1ID"
+            amazonLink: "https://www.amazon.in/BenQ-GW2786TC-Speakers-Cancelling-Microphone/dp/B0D9K2TD2B/?_encoding=UTF8&pd_rd_w=QCcNX&content-id=amzn1.sym.509965a2-791b-4055-b876-943397d37ed3%3Aamzn1.symc.fc11ad14-99c1-406b-aa77-051d0ba1aade&pf_rd_p=509965a2-791b-4055-b876-943397d37ed3&pf_rd_r=WVKSCF5BQH9SB96K81QJ&pd_rd_wg=5qsJJ&pd_rd_r=604a80ea-a36f-4cc3-90a3-cc58f4945662&ref_=pd_hp_d_atf_ci_mcx_mr_ca_hp_atf_d&th=1"
         },
         {
             title: "River's Song",
@@ -515,11 +515,11 @@ function createPoemElement(poem, section, index) {
         </div>
         ${isExpanded ? `
             <div class="poem-author">
-                <span class="author-credit">- by Sajin Sudhakaran</span>
+                <span class="author-credit">- by Sajin P Sudhakaran</span>
             </div>
             <div class="poem-amazon-link">
                 <a href="${poem.amazonLink}" class="amazon-poem-link" target="_blank">
-                    🖼️ Get this poem as framed art on Amazon
+                    🖼️ Get this poem as a Gift on Amazon
                 </a>
             </div>
             <div class="poem-share">
