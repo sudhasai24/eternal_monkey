@@ -1,21 +1,17 @@
 {
   "name": "sajin-poetry-collection",
   "version": "1.0.0",
-  "description": "A contemplative collection of poetry exploring nature, wisdom, and the inner journey of the soul by Sajin P. Sudhakaran",
+  "description": "A contemplative collection of poetry exploring nature, wisdom, and the inner journey of the soul by Sajin P Sudhakaran",
   "main": "index.html",
   "scripts": {
-    "dev": "npx serve -s . -l 3000",
-    "build": "echo 'No build step required for static site'",
-    "start": "npx serve -s . -l 3000"
+    "dev": "http-server . -p 3000 -o",
+    "start": "http-server . -p 3000",
+    "build": "echo 'Static site - no build needed'"
   },
-  "keywords": ["poetry", "literature", "contemplative", "nature", "wisdom"],
-  "author": "Sajin P. Sudhakaran",
-  "license": "All Rights Reserved",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sajin/poetry-collection"
-  },
+  "keywords": ["poetry", "literature", "contemplation", "nature"],
+  "author": "Sajin P Sudhakaran",
+  "license": "MIT",
   "devDependencies": {
-    "serve": "^14.2.1"
+    "http-server": "^14.1.1"
   }
 }
