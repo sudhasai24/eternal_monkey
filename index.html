@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eternal monk(ey) - Poetry Collection</title>
-    <meta name="description" content="A contemplative collection of poetry exploring nature, wisdom, and the inner journey of the soul.">
+    <title>Sajin P. Sudhakaran - Poetry Collection</title>
+    <meta name="description" content="A contemplative collection of poetry exploring nature, wisdom, and the inner journey of the soul by Sajin P. Sudhakaran.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,8 +23,48 @@
                 </button>
                 
                 <div class="header">
-                    <h1 class="title">eternal monk(ey)</h1>
+                    <h1 class="title">Sajin P. Sudhakaran</h1>
                     <p class="subtitle">A collection of contemplative verse</p>
+                </div>
+
+                <!-- Books Section -->
+                <div class="books-section">
+                    <h2 class="books-title">Published Books</h2>
+                    <div class="books-grid">
+                        <div class="book-item">
+                            <div class="book-thumbnail">
+                                <div class="book-cover book-1">
+                                    <div class="book-title-text">Whispers of the Soul</div>
+                                    <div class="book-author-text">Sajin P. Sudhakaran</div>
+                                </div>
+                            </div>
+                            <div class="book-info">
+                                <h3 class="book-name">Whispers of the Soul</h3>
+                                <a href="https://amazon.com/dp/BOOK1ID" class="amazon-link" target="_blank">
+                                    <img src="https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg?auto=compress&cs=tinysrgb&w=40&h=20" alt="Amazon" class="amazon-logo">
+                                    View on Amazon
+                                </a>
+                            </div>
+                        </div>
+                        <div class="book-item">
+                            <div class="book-thumbnail">
+                                <div class="book-cover book-2">
+                                    <div class="book-title-text">Echoes of Eternity</div>
+                                    <div class="book-author-text">Sajin P. Sudhakaran</div>
+                                </div>
+                            </div>
+                            <div class="book-info">
+                                <h3 class="book-name">Echoes of Eternity</h3>
+                                <a href="https://amazon.com/dp/BOOK2ID" class="amazon-link" target="_blank">
+                                    <img src="https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg?auto=compress&cs=tinysrgb&w=40&h=20" alt="Amazon" class="amazon-logo">
+                                    View on Amazon
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="books-note">
+                        <p>📖 Individual poems available as framed prints on Amazon</p>
+                    </div>
                 </div>
                 
                 <div class="nav-sections">
@@ -53,7 +93,7 @@
                 
                 <div class="nav-footer">
                     <p>Click any poem tile to expand</p>
-                    <p>Scroll to explore sections</p>
+                    <p>Scroll to explore all sections</p>
                 </div>
             </div>
         </nav>
@@ -67,7 +107,7 @@
                 <div class="poems-grid" id="nature-poems"></div>
             </section>
 
-            <section id="contemplation" class="poem-section">
+            <section id="contemplation" class="poem-section active">
                 <div class="section-header">
                     <span class="section-icon">🧘</span>
                     <h2 class="section-title">Contemplation</h2>
@@ -75,7 +115,7 @@
                 <div class="poems-grid" id="contemplation-poems"></div>
             </section>
 
-            <section id="journey" class="poem-section">
+            <section id="journey" class="poem-section active">
                 <div class="section-header">
                     <span class="section-icon">🛤️</span>
                     <h2 class="section-title">Inner Journey</h2>
@@ -83,7 +123,7 @@
                 <div class="poems-grid" id="journey-poems"></div>
             </section>
 
-            <section id="wisdom" class="poem-section">
+            <section id="wisdom" class="poem-section active">
                 <div class="section-header">
                     <span class="section-icon">📿</span>
                     <h2 class="section-title">Ancient Wisdom</h2>
@@ -91,13 +131,20 @@
                 <div class="poems-grid" id="wisdom-poems"></div>
             </section>
 
-            <section id="seasons" class="poem-section">
+            <section id="seasons" class="poem-section active">
                 <div class="section-header">
                     <span class="section-icon">🍂</span>
                     <h2 class="section-title">Seasons of Life</h2>
                 </div>
                 <div class="poems-grid" id="seasons-poems"></div>
             </section>
+
+            <!-- Copyright Footer -->
+            <footer class="site-footer">
+                <div class="copyright">
+                    © 2026 by Sajin P. Sudhakaran. All rights reserved.
+                </div>
+            </footer>
         </main>
 
         <!-- Background decoration -->
@@ -107,29 +154,8 @@
         </div>
     </div>
 
-    <!-- Comment Modal -->
-    <div class="modal-overlay" id="commentModal">
-        <div class="modal">
-            <div class="modal-header">
-                <h3>Leave a Comment</h3>
-                <button class="modal-close" id="closeCommentModal">&times;</button>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <label for="commenterName">Your Name</label>
-                    <input type="text" id="commenterName" placeholder="Enter your name">
-                </div>
-                <div class="form-group">
-                    <label for="commentText">Comment</label>
-                    <textarea id="commentText" placeholder="Share your thoughts about this poem..."></textarea>
-                </div>
-                <div class="modal-actions">
-                    <button class="btn btn-secondary" id="cancelComment">Cancel</button>
-                    <button class="btn btn-primary" id="submitComment">Submit Comment</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Auto-opening trigger zone -->
+    <div class="auto-open-trigger" id="autoOpenTrigger"></div>
 
     <script src="script.js"></script>
 </body>
