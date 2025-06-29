@@ -488,10 +488,8 @@ function createPoemElement(poem, section, index) {
             ${isExpanded ? contentLines : previewContent}
         </div>
         ${isExpanded ? `
-            <div class="poem-website-link">
-                <a href="${poem.websiteLink}" class="website-poem-link" target="_blank">
-                    🌐 Visit Sajin P Sudhakaran's Website
-                </a>
+            <div class="poem-author">
+                <span class="author-credit">- by Sajin P Sudhakaran</span>
             </div>
             <div class="poem-share">
                 <div class="share-title">Share this poem</div>
@@ -510,9 +508,14 @@ function createPoemElement(poem, section, index) {
                     </button>
                 </div>
             </div>
+            <div class="poem-website-link">
+                <a href="${poem.websiteLink}" class="website-poem-link" target="_blank">
+                    🌐 Visit Sajin P Sudhakaran's Website
+                </a>
+            </div>
         ` : ''}
         <div class="poem-footer">
-            ${isExpanded ? '- by Sajin P Sudhakaran' : 'Click to expand...'}
+            ${isExpanded ? '' : 'Click to expand...'}
         </div>
     `;
     

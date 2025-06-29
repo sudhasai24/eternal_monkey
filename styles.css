@@ -433,30 +433,18 @@ body {
     animation: fadeIn 0.5s ease-out forwards;
 }
 
-/* Website Link for Poems */
-.poem-website-link {
+/* Author Credit */
+.poem-author {
     margin-top: 1rem;
     padding-top: 1rem;
     border-top: 1px solid rgba(148, 163, 184, 0.2);
 }
 
-.website-poem-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
+.author-credit {
     color: #f59e0b;
-    text-decoration: none;
     font-size: 0.875rem;
-    padding: 0.5rem 1rem;
-    background: rgba(245, 158, 11, 0.1);
-    border: 1px solid rgba(245, 158, 11, 0.3);
-    border-radius: 0.5rem;
-    transition: all 0.2s ease;
-}
-
-.website-poem-link:hover {
-    background: rgba(245, 158, 11, 0.2);
-    color: #ea580c;
+    font-style: italic;
+    font-weight: 500;
 }
 
 /* Share Options */
@@ -499,6 +487,32 @@ body {
     background: rgba(245, 158, 11, 0.1);
     border-color: rgba(245, 158, 11, 0.3);
     color: #f59e0b;
+}
+
+/* Website Link for Poems */
+.poem-website-link {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.website-poem-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #f59e0b;
+    text-decoration: none;
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    background: rgba(245, 158, 11, 0.1);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.website-poem-link:hover {
+    background: rgba(245, 158, 11, 0.2);
+    color: #ea580c;
 }
 
 .poem-footer {
